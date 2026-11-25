@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@import '@/modules/common/styles/themes/light.css';
+@import '@/modules/common/styles/themes/dark.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: system-ui, sans-serif;
+  --color-background: var(--theme-background);
+  --color-foreground: var(--theme-foreground);
+  --color-primary: var(--theme-primary);
+  --color-primary-foreground: var(--theme-primary-foreground);
+  --color-muted-foreground: var(--theme-muted-foreground);
+  --color-input: var(--theme-input);
+  --color-ring: var(--theme-ring);
+  --color-destructive: var(--theme-destructive);
+  --color-accent: var(--theme-accent);
+  --color-accent-foreground: var(--theme-accent-foreground);
+  --color-secondary: var(--theme-secondary);
+  --color-secondary-foreground: var(--theme-secondary-foreground);
+  --color-paper: var(--theme-paper);
+  --color-sage: var(--theme-sage);
+  --color-line: var(--theme-line);
+  --color-canvas: var(--theme-canvas);
+  --color-card-line: var(--theme-card-line);
+  --color-art-dots: var(--theme-art-dots);
+  --color-art-paper: var(--theme-art-paper);
+  --color-art-border: var(--theme-art-border);
+  --color-art-shadow: var(--theme-art-shadow);
+  --color-hover: var(--theme-hover);
+  --color-selected: var(--theme-selected);
+  --color-marker: var(--theme-marker);
+  --shadow-shell: var(--theme-shell-shadow);
+  --shadow-art: 5px 6px 0 var(--theme-art-shadow);
+}

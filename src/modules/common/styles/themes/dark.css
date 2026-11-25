@@ -1,0 +1,27 @@
+:root.dark {
+  --theme-background: #213128;
+  --theme-foreground: #e6ede6;
+  --theme-primary: #a5d2b4;
+  --theme-primary-foreground: #14251b;
+  --theme-muted-foreground: #b1c2b5;
+  --theme-input: #6b8171;
+  --theme-ring: #a5d2b4;
+  --theme-destructive: #ffb4a7;
+  --theme-accent: #344c3b;
+  --theme-accent-foreground: #e6ede6;
+  --theme-secondary: #344c3b;
+  --theme-secondary-foreground: #e6ede6;
+  --theme-paper: #19251f;
+  --theme-sage: #2a3c30;
+  --theme-line: #435247;
+  --theme-canvas: #101a14;
+  --theme-card-line: #435247;
+  --theme-art-dots: #435c49;
+  --theme-art-paper: #213128;
+  --theme-art-border: #6b8171;
+  --theme-art-shadow: #14251b;
+  --theme-hover: #2a3c30;
+  --theme-selected: #344c3b;
+  --theme-marker: #a5d2b4;
+  --theme-shell-shadow: 0 10px 32px #00000033, 0 2px 5px #00000026;
+}

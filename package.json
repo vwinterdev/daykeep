@@ -11,8 +11,7 @@
     "typecheck": "tsc --noEmit",
     "build": "vite build",
     "preview": "vite preview",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "node --env-file-if-exists=.env.local node_modules/drizzle-kit/bin.cjs migrate --config=db/drizzle.migrate.config.ts"
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.17",
@@ -20,9 +19,12 @@
     "@supabase/supabase-js": "^2.119.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "i18next": "^27.2.9",
+    "i18next-http-backend": "^4.1.2",
     "lucide-react": "^1.79.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
+    "react-i18next": "^18.0.3",
     "tailwind-merge": "^3.7.1"
   },
   "devDependencies": {
@@ -33,15 +35,9 @@
     "@vitejs/plugin-react": "^6.3.0",
     "drizzle-kit": "^0.31.11",
     "drizzle-orm": "^0.45.4",
-    "pg": "^8.23.1",
     "tailwindcss": "^4.3.5",
     "typescript": "5.9",
     "vite": "^8.3.8",
     "vite-plugin-pwa": "^2.0.0"
-  },
-  "overrides": {
-    "@esbuild-kit/core-utils": {
-      "esbuild": "^0.25.0"
-    }
   }
 }

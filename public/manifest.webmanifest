@@ -1,9 +1,9 @@
 {
   "id": "/",
-  "name": "Деловой журнал",
-  "short_name": "Деловой журнал",
-  "description": "Рабочее пространство для малого бизнеса",
-  "lang": "ru",
+  "name": "Business journal",
+  "short_name": "Journal",
+  "description": "Bookings, clients and payments in one place",
+  "lang": "en",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

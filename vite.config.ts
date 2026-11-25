@@ -15,7 +15,7 @@ export default defineConfig({
       manifest: false, // Манифест остаётся в public/manifest.webmanifest.
       includeAssets: ['icons/*', 'manifest.webmanifest'],
       workbox: {
-        globPatterns: ['**/*.{js,css,html}'],
+        globPatterns: ['**/*.{js,css,html}', 'locales/**/*.json'],
         navigateFallback: '/index.html',
         navigateFallbackAllowlist: [/^\/(?:index\.html)?$/],
         cleanupOutdatedCaches: true,
