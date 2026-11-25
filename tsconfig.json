@@ -5,7 +5,7 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "react-jsx",
-    "types": ["vite/client", "node"],
+    "types": ["vite/client", "vite-plugin-pwa/react", "node"],
     "paths": { "@/*": ["./src/*"] },
     "strict": true,
     "noUnusedLocals": true,
@@ -14,5 +14,5 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src", "db", "tests", "*.config.ts"]
+  "include": ["src", "db", "*.config.ts"]
 }

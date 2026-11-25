@@ -18,7 +18,7 @@ export default function Account() {
         <h2>Подключите Supabase</h2>
         <p>Журнал можно просматривать без аккаунта. Чтобы войти и сохранить имя, задайте адрес проекта и публичный ключ:</p>
         <ul className="config-list"><li><code>VITE_SUPABASE_URL</code></li><li><code>VITE_SUPABASE_PUBLISHABLE_KEY</code></li></ul>
-        <p>Локально добавьте их в <code>.env.local</code>, на Vercel — в настройки окружения. Затем примените миграцию из <code>db/migrations</code>. Подробности — в README проекта.</p>
+        <p>Локально добавьте их в <code>.env.local</code>, на Vercel — в настройки окружения. Для сохранения профиля нужна таблица <code>profiles</code>; настройку базы добавим отдельно.</p>
       </section>
     )
   }

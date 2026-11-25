@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import type { ComponentType, ReactNode } from 'react'
 import { UserRound } from 'lucide-react'
+import { PwaPrompt } from '@/components/PwaPrompt'
 
 type Section = { path: string; title: string; icon: ComponentType<{ size: number; strokeWidth: number }> }
 
@@ -22,7 +23,10 @@ export function AppShell({ path, sections, children }: { path: string; sections:
           <UserRound size={16} strokeWidth={1.7} /> Аккаунт
         </a>
       </header>
-      <main className="app-main" ref={main} tabIndex={0} aria-label="Содержимое раздела">{children}</main>
+      <main className="app-main" ref={main} tabIndex={0} aria-label="Содержимое раздела">
+        <PwaPrompt />
+        {children}
+      </main>
       <nav className="tab-bar" aria-label="Основная навигация">
         {sections.map(({ path: href, title, icon: Icon }) => (
           <a key={href} href={`#${href}`} aria-current={path === href ? 'page' : undefined}>
